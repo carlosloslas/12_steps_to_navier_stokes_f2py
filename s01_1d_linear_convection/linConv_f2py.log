@@ -1,0 +1,109 @@
+running build
+running config_cc
+unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+build_src
+building extension "linearConvection" sources
+f2py options: []
+f2py:> /Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5/linearConvectionmodule.c
+creating /Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5
+Reading fortran codes...
+	Reading file 'linearConvection.f90' (format:free)
+Post-processing...
+	Block: linearConvection
+			Block: wavemod
+				Block: linearwave
+				Block: init
+Post-processing (stage 2)...
+	Block: linearConvection
+		Block: unknown_interface
+			Block: wavemod
+				Block: linearwave
+				Block: init
+Building modules...
+	Building module "linearConvection"...
+		Constructing F90 module support for "wavemod"...
+Skipping type linearwave
+			Constructing wrapper function "wavemod.init"...
+			  init(h,ux)
+	Wrote C/API module "linearConvection" to file "/Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5/linearConvectionmodule.c"
+	Fortran 90 wrappers are saved to "/Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5/linearConvection-f2pywrappers2.f90"
+  adding '/Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5/fortranobject.c' to sources.
+  adding '/Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5' to include_dirs.
+copying /Users/closadalastra/anaconda3/lib/python3.5/site-packages/numpy/f2py/src/fortranobject.c -> /Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5
+copying /Users/closadalastra/anaconda3/lib/python3.5/site-packages/numpy/f2py/src/fortranobject.h -> /Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5
+  adding '/Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5/linearConvection-f2pywrappers2.f90' to sources.
+build_src: building npy-pkg config files
+running build_ext
+customize UnixCCompiler
+customize UnixCCompiler using build_ext
+customize Gnu95FCompiler
+Found executable /usr/local/bin/gfortran-4.9
+Found executable /usr/local/bin/gfortran
+customize Gnu95FCompiler
+customize Gnu95FCompiler using build_ext
+building 'linearConvection' extension
+compiling C sources
+C compiler: gcc -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/closadalastra/anaconda3/include -arch x86_64
+
+creating /Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/Users
+creating /Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/Users/closadalastra
+creating /Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/Users/closadalastra/myFortran
+creating /Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/Users/closadalastra/myFortran/Fprojects
+creating /Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py
+creating /Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection
+creating /Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5
+compile options: '-I/Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5 -I/Users/closadalastra/anaconda3/lib/python3.5/site-packages/numpy/core/include -I/Users/closadalastra/anaconda3/include/python3.5m -c'
+gcc: /Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5/linearConvectionmodule.c
+In file included from /Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5/linearConvectionmodule.c:18:
+In file included from /Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5/fortranobject.h:13:
+In file included from /Users/closadalastra/anaconda3/lib/python3.5/site-packages/numpy/core/include/numpy/arrayobject.h:4:
+In file included from /Users/closadalastra/anaconda3/lib/python3.5/site-packages/numpy/core/include/numpy/ndarrayobject.h:18:
+In file included from /Users/closadalastra/anaconda3/lib/python3.5/site-packages/numpy/core/include/numpy/ndarraytypes.h:1788:
+/Users/closadalastra/anaconda3/lib/python3.5/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:15:2: warning: "Using deprecated NumPy API, disable it by "          "#defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-W#warnings]
+#warning "Using deprecated NumPy API, disable it by " \
+ ^
+1 warning generated.
+gcc: /Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5/fortranobject.c
+In file included from /Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5/fortranobject.c:2:
+In file included from /Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5/fortranobject.h:13:
+In file included from /Users/closadalastra/anaconda3/lib/python3.5/site-packages/numpy/core/include/numpy/arrayobject.h:4:
+In file included from /Users/closadalastra/anaconda3/lib/python3.5/site-packages/numpy/core/include/numpy/ndarrayobject.h:18:
+In file included from /Users/closadalastra/anaconda3/lib/python3.5/site-packages/numpy/core/include/numpy/ndarraytypes.h:1788:
+/Users/closadalastra/anaconda3/lib/python3.5/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:15:2: warning: "Using deprecated NumPy API, disable it by "          "#defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-W#warnings]
+#warning "Using deprecated NumPy API, disable it by " \
+ ^
+/Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5/fortranobject.c:139:18: warning: comparison of integers of different signs: 'Py_ssize_t' (aka 'long') and 'unsigned long' [-Wsign-compare]
+        if (size < sizeof(notalloc)) {
+            ~~~~ ^ ~~~~~~~~~~~~~~~~
+2 warnings generated.
+compiling Fortran 90 module sources
+Fortran f77 compiler: /usr/local/bin/gfortran-4.9 -Wall -g -ffixed-form -fno-second-underscore -m64 -fPIC -O3 -funroll-loops
+Fortran f90 compiler: gfortran-4.9 -Wall -g -fno-second-underscore -m64 -fPIC -O3 -funroll-loops
+Fortran fix compiler: gfortran-4.9 -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -m64 -fPIC -O3 -funroll-loops
+compile options: '-I/Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/src.macosx-10.7-x86_64-3.5 -I/Users/closadalastra/anaconda3/lib/python3.5/site-packages/numpy/core/include -I/Users/closadalastra/anaconda3/include/python3.5m -c'
+extra options: '-J/Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/ -I/Users/closadalastra/myFortran/Fprojects/12_steps_to_navier_stokes_f2py/s01_1d_linear_convection/'
+gfortran-4.9:f90: linearConvection.f90
+linearConvection.f90:19.13:
+
+    procedure :: init!,calculate_next
+             1
+Error: Non-polymorphic passed-object dummy argument of 'init' at (1)
+linearConvection.f90:25.39:
+
+    class(linearWave), intent(out) :: w
+                                       1
+Error: Symbol at (1) is not a DUMMY variable
+linearConvection.f90:19.13:
+
+    procedure :: init!,calculate_next
+             1
+Error: Non-polymorphic passed-object dummy argument of 'init' at (1)
+linearConvection.f90:25.39:
+
+    class(linearWave), intent(out) :: w
+                                       1
+Error: Symbol at (1) is not a DUMMY variable
+
